@@ -1,9 +1,8 @@
 import React from "react";
 
-//Filter transactions by typing into the search bar.
 
 function Search({searchTransaction, setSearchTransaction}) {
-  //1. create a function (handleSearch) with an event 
+  
 
   function handleSearch(event) {
     setSearchTransaction(event.target.value)
@@ -15,7 +14,7 @@ function Search({searchTransaction, setSearchTransaction}) {
       <input
         type="text"
         placeholder="Search your Recent Transactions"
-        //remove console.log and add handleSearch props
+      
         onChange={handleSearch}
       />
       <i className="circular search link icon"></i>
